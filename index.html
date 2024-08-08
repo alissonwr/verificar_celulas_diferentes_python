@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Arquivos Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="file"], input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload de Arquivos Excel para Comparação</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="file1">Arquivo 1:</label>
+            <input type="file" name="file1" id="file1" required>
+        </div>
+        <div>
+            <label for="sheet1">Nome da Planilha no Arquivo 1:</label>
+            <input type="text" name="sheet1" id="sheet1" required>
+        </div>
+        <div>
+            <label for="file2">Arquivo 2:</label>
+            <input type="file" name="file2" id="file2" required>
+        </div>
+        <div>
+            <label for="sheet2">Nome da Planilha no Arquivo 2:</label>
+            <input type="text" name="sheet2" id="sheet2" required>
+        </div>
+        <div>
+            <button type="submit">Comparar</button>
+        </div>
+    </form>
+</body>
+</html>
