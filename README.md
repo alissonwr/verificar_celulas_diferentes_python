@@ -1,0 +1,1 @@
+# verificar_celulas_diferentes_python
